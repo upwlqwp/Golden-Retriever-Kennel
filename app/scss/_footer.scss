@@ -1,0 +1,46 @@
+.footer {
+  background-color: $dark-text;
+  padding: 50px 0 32px;
+  color: $light-text;
+
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  &__menu-list {
+    max-width: 250px;
+  }
+
+  &__menu-headline {
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  &__menu-item + &__menu-item {
+    padding-top: 20px;
+  }
+
+  &__copy {
+    max-width: 880px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 52px;
+}
+
+.copy {
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+}
