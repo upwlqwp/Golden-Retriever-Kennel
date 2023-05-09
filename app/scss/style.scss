@@ -72,7 +72,7 @@
   background-color: $light-text;
 }
 
-.why-lease {
+.benefits {
   color: $dark-text;
   padding: 150px 0;
 
@@ -425,4 +425,147 @@
   padding: 5px;
   color: $accent;
   border-bottom: 3px solid $accent;
+}
+
+
+.puppy {
+
+  &__item{
+    margin-bottom: 30px;
+  }
+
+
+  &__card-img {
+    margin-bottom: 20px;
+    border-radius: 3px;
+  }
+  &__info-text {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  &__info-item {
+    margin-right: 30px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 29px 5px  29px ;
+    background-color: #f9f7ee;
+    box-shadow: 3px 3px 6px 6px #fafdf6;
+  }
+
+  &__card-wrapper {
+    display: flex;
+  }
+
+  &__card-title {
+    color: #e03d02;
+    font-size: 32px;
+    margin: 25px 0;
+  }
+
+  &__card-gender {
+    display: block;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+  }
+
+  &__card-age {
+    display: block;
+    font-size: 20px;
+  }
+
+  &__card-subtitle {
+    color: #343434;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__card-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+
+  &__card-text {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    max-width: 500px;
+  }
+}
+
+.questions {
+  background-image: url("../images/questions-img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 50px;
+
+  &__title {
+    background-color: rgba(0, 0, 0, 0.387);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 3px;
+  }
+
+  &__items {
+    max-width: 680px;
+  }
+
+  &__item {
+    margin-bottom: 18px;
+    max-width: 610px;
+    background-color: rgba(0, 0, 0, 0.387);
+  }
+
+  &__item-title {
+    display: block;
+    line-height: 28px;
+    font-size: 21px;
+    color: #e8c200;
+    padding: 10px;
+    max-height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: url("../images/icons/accordion-arrow.svg");
+      position: absolute;
+      height: 70px;
+      width: 60px;
+      background-color: #e8c200;
+      right: -60px;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__item-text {
+    font-size: 18px;
+    padding: 0 10px 0;
+    max-width: 510px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
 }

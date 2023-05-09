@@ -34,4 +34,19 @@ const swiper = new Swiper('.swiper', {
 })
 
 
+//// acordeion
 
+document.querySelectorAll(".questions__item-title").forEach((el) => {
+  el.addEventListener("click", () => {
+
+    let content = el.nextElementSibling;
+    console.log(content);
+
+    if (content.style.maxHeight) {
+      document.querySelectorAll(".questions__item-text").forEach((el) => (el.style.maxHeight = null));
+    } else {
+      document.querySelectorAll(".questions__item-text").forEach((el) => (el.style.maxHeight = null));
+      content.style.maxHeight = content.scrollHeight + "px"
+    }
+  });
+});

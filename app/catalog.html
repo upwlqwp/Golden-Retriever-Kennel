@@ -11,57 +11,47 @@
 
 <div class="wrapper">
   <header class="header-main">
-      <div class="container">
-        <div class="header__inner">
-          <a class="logo" href="index.html">
-           
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <picture class="logo__img">
+            <source media="(min-width:650px)" srcset="images/logo.svg" />
+            <source media="(min-width:465px)" srcset="images/logo-mobile.svg" />
+            <img
+              src="images/logo-mobile.svg"
+              alt="logo"
+              style="width: auto"
+              width="90"
+              height="90"
+            />
+          </picture>
+        </a>
   
-  
-            <picture class="logo__img">
-              <source
-                media="(min-width:650px)"
-                srcset="images/logo.svg"
-              />
-              <source
-                media="(min-width:465px)"
-                srcset="images/logo-mobile.svg"
-              />
-              <img
-                src="images/logo-mobile.svg"
-                alt="logo"
-                style="width: auto"
-                width="90"
-                height="90"
-              />
-            </picture>
-          </a>
-  
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">About</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Benefits</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link menu__list-link--active" href="catalog.html">Catalog</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Mom's & Dad's</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link menu__list-link--active" href="contact.html">Contact us</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="index.html">Home</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="questions.html">Q&A</a>
+            </li>
+        
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="catalog.html">Puppies</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
+  
 
 <main class="main">
 
-<section class="parents section-hidden" id="parents">
+<section class="parents " id="parents">
     <div class="container">
       <h3 class="title">Mom's & Dad's</h3>
 
@@ -109,11 +99,186 @@
   </section>
 
 
-<section class="pupies">
+  <section class="puppy " id="puppies">
     <div class="container">
-        
+      <h3 class="title">About our puppy</h3>
+
+      <ul class="puppy__list">
+        <li class="puppy__item">
+          <article class="puppy__card">
+            <img
+              class="puppy__card-img"
+              src="images/puppies/puppy1.webp"
+              alt=""
+              width="500"
+              height="400"
+            />
+
+            <div class="puppy__wrapper">
+              <h3 class="puppy__card-title">Lydney</h3>
+
+              <ul class="puppy__card-wrapper">
+                <li class="puppy__card-list">
+                  <h4 class="puppy__card-subtitle">LITTER SIZE</h4>
+                  <span
+                    class="puppy__card-gender"
+                    style="background-image: url('images/bitch.svg')"
+                    >4 Bitch</span
+                  >
+                  <span
+                    class="puppy__card-gender"
+                    style="background-image: url('images/dog.svg')"
+                    >6 Dog</span
+                  >
+                </li>
+                <li class="puppy__card-list">
+                  <h4 class="puppy__card-subtitle">BORN</h4>
+                  <span class="puppy__card-age"
+                    >10 weeks, 1 days ago</span
+                  >
+                </li>
+              </ul>
+
+              <h3 class="puppy__card-title">ABOUT THIS LITTER</h3>
+
+              <p class="puppy__card-text">
+                Truly first class litter of working strain that will
+                complement any setting. Not to be missed!
+                brynovationgundogs.co.uk
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="puppy__item">
+          <article class="puppy__card">
+            <img
+              class="puppy__card-img"
+              src="images/puppies/puppy2.webp"
+              alt=""
+              width="500"
+              height="400"
+            />
+
+            <div class="puppy__wrapper">
+              <h3 class="puppy__card-title">Chesterfield</h3>
+
+              <ul class="puppy__card-wrapper">
+                <li class="puppy__card-list">
+                  <h4 class="puppy__card-subtitle">LITTER SIZE</h4>
+                  <span
+                    class="puppy__card-gender"
+                    style="background-image: url('images/bitch.svg')"
+                    >5 Bitch</span
+                  >
+                  <span
+                    class="puppy__card-gender"
+                    style="background-image: url('images/dog.svg')"
+                    >6 Dog</span
+                  >
+                </li>
+                <li class="puppy__card-list">
+                  <h4 class="puppy__card-subtitle">BORN</h4>
+                  <span class="puppy__card-age">6 weeks, 0 days ago</span>
+                </li>
+              </ul>
+
+              <h3 class="puppy__card-title">ABOUT THIS LITTER</h3>
+
+              <p class="puppy__card-text">
+                Fully health tested parents. Ready to be reserved now,
+                viewings being arranged.
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="puppy__item">
+          <article class="puppy__card">
+            <img
+              class="puppy__card-img"
+              src="images/puppies/puppy3.webp"
+              alt=""
+              width="500"
+              height="400"
+            />
+
+            <div class="puppy__wrapper">
+              <h3 class="puppy__card-title">Warrington</h3>
+
+              <ul class="puppy__card-wrapper">
+                <li class="puppy__card-list">
+                  <h4 class="puppy__card-subtitle">LITTER SIZE</h4>
+                  <span
+                    class="puppy__card-gender"
+                    style="background-image: url('images/bitch.svg')"
+                    >5 Bitch</span
+                  >
+                  <span
+                    class="puppy__card-gender"
+                    style="background-image: url('images/dog.svg')"
+                    >2 Dog</span
+                  >
+                </li>
+                <li class="puppy__card-list">
+                  <h4 class="puppy__card-subtitle">BORN</h4>
+                  <span class="puppy__card-age">6 weeks, 4 days ago</span>
+                </li>
+              </ul>
+
+              <h3 class="puppy__card-title">ABOUT THIS LITTER</h3>
+
+              <p class="puppy__card-text">
+                Born on Feb 19th, I have 1 bitch still available. Puppies
+                are brought up in the home and are well socialised.
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="puppy__item">
+          <article class="puppy__card">
+            <img
+              class="puppy__card-img"
+              src="images/puppies/puppy4.webp"
+              alt=""
+              width="500"
+              height="400"
+            />
+
+            <div class="puppy__wrapper">
+              <h3 class="puppy__card-title">Bournemouth</h3>
+
+              <ul class="puppy__card-wrapper">
+                <li class="puppy__card-list">
+                  <h4 class="puppy__card-subtitle">LITTER SIZE</h4>
+                  <span
+                    class="puppy__card-gender"
+                    style="background-image: url('images/bitch.svg')"
+                    >2 Bitch</span
+                  >
+                  <span
+                    class="puppy__card-gender"
+                    style="background-image: url('images/dog.svg')"
+                    >8 Dog</span
+                  >
+                </li>
+                <li class="puppy__card-list">
+                  <h4 class="puppy__card-subtitle">BORN</h4>
+                  <span class="puppy__card-age">2 weeks, 6 days ago</span>
+                </li>
+              </ul>
+
+              <h3 class="puppy__card-title">ABOUT THIS LITTER</h3>
+
+              <p class="puppy__card-text">
+                *one boy available* Dam from working lines, overseas sire
+                from show lines. Both health tested with lovely
+                temperaments.
+              </p>
+            </div>
+          </article>
+        </li>
+      </ul>
     </div>
-</section>
+  </section>
 
 
 
