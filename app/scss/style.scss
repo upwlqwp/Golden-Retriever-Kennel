@@ -16,26 +16,21 @@
   left: 0;
   right: 0;
 
+  &__title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 350px;
+    margin-bottom: 40px;
+  }
 
-&__title{
-
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 350px;
-margin-bottom: 40px;
-}
-
- &__text{
-  font-size: 24px;
-  font-weight: 600;
-  max-width: 680px;
-  margin: 50px auto 50px;
-  text-align: center;
- }
-
-
- 
+  &__text {
+    font-size: 24px;
+    font-weight: 600;
+    max-width: 680px;
+    margin: 50px auto 50px;
+    text-align: center;
+  }
 }
 
 .swiper::after {
@@ -184,14 +179,12 @@ margin-bottom: 40px;
 }
 
 .important {
-
-
   &__title {
     margin-bottom: 20px;
     color: $accent;
   }
 
-  &__item-subtitle{
+  &__item-subtitle {
     font-size: 26px;
     padding: 20px 0;
     color: $accent;
@@ -210,9 +203,8 @@ margin-bottom: 40px;
     gap: 40px;
   }
 
-  &__item-img{
+  &__item-img {
     height: 400px;
-
   }
 }
 
@@ -230,12 +222,10 @@ margin-bottom: 40px;
   }
 
   &__link {
-
     svg {
       fill: $primary-color;
       height: 50px;
       width: 50px;
-
 
       &:hover {
         opacity: 0.6;
@@ -328,7 +318,6 @@ margin-bottom: 40px;
   }
 }
 
-
 .parents {
   background-color: #f9f7ee;
 
@@ -382,7 +371,6 @@ margin-bottom: 40px;
   }
 }
 
-
 .tabs {
   &__list {
     display: flex;
@@ -400,7 +388,6 @@ margin-bottom: 40px;
     justify-content: space-between;
     align-items: center;
   }
-
 
   &__content-box--column {
     flex-direction: column;
@@ -424,20 +411,16 @@ margin-bottom: 40px;
     margin-right: 40px;
   }
 
-  &__item--active{
+  &__item--active {
     color: $accent;
   }
-
-  
 }
-
-
 
 .hidden {
   display: none;
 }
 
-.active{
+.active {
   display: block;
   padding: 5px;
   color: $accent;
