@@ -1,3 +1,16 @@
+/// hamburger-menu
+const hamburgerMenu = document.querySelector('.burger');
+const menuList = document.querySelector('.menu__list');
+const menuItems = document.querySelector('.burger__lines')
+
+hamburgerMenu.onclick = function () {
+
+    menuList.classList.toggle('active')
+    menuItems.classList.toggle('active')
+
+}
+
+
 // tabs
 
 const tabItem = document.querySelectorAll('.tabs__item');
@@ -11,12 +24,11 @@ for (let item of tabItem) {
   
       for (let element of tabContent) {
         element.classList.add('hidden');
-        item.classList.remove('active');
+     
       };
   
       const content = document.querySelector('#' + item.dataset.tab);
       content.classList.remove('hidden');
-      item.classList.add('active');
     });
   };
 

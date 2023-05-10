@@ -4,8 +4,9 @@
   color: $light-text;
 
   &__menu {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
     margin-bottom: 50px;
   }
 
@@ -28,13 +29,6 @@
     margin: 0 auto 30px;
     text-align: center;
   }
-}
-
-.app {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 52px;
 }
 
 .copy {

@@ -1,18 +1,16 @@
 .header {
   background-color: transparent;
-position: absolute;
+  position: absolute;
   z-index: 50;
   left: 0;
   right: 0;
   color: $primary-color;
 
-  
   &__inner {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    align-items:center;
-  
+    align-items: center;
   }
 
   &-main {
@@ -21,14 +19,10 @@ position: absolute;
     z-index: 5;
     left: 0;
     right: 0;
-
   }
 }
 
-
-
 .menu {
- 
   &__list {
     display: flex;
     align-items: center;
@@ -40,7 +34,7 @@ position: absolute;
     text-transform: uppercase;
   }
 
-  &__list-link--active{
+  &__list-link--active {
     color: $accent;
   }
 }

@@ -1,0 +1,334 @@
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+
+.section {
+  &-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: $primary-color;
+  }
+}
+
+  .parents {
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .contacts {
+    padding: 50px 0 50px;
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 13px;
+    }
+
+    &__text {
+      padding: 0 20px;
+      margin: 0 auto 30px;
+    }
+  }
+
+  .form {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__input {
+      min-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .tabs {
+    &__content-text p {
+      margin: 0 10px;
+    }
+  }
+
+  .puppy {
+    &__card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 4px;
+      background-color: #f9f7ee;
+      box-shadow: none;
+    }
+
+    &__item {
+      margin-bottom: 15px;
+    }
+  }
+
+  .video-leasing {
+    &__content {
+      max-width: 530px;
+      height: auto;
+    }
+  }
+
+  .footer {
+    &__menu {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .benefits {
+    padding: 50px 0;
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    &__item-img {
+      margin: 0 auto 30px;
+      padding: 30px;
+    }
+
+    &__item-subtitle {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .menu {
+    &__list {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      display: block;
+      padding: 80px;
+      text-align: center;
+      background-color: $dark-text;
+      transform: translateY(-200%);
+      transition: transform 0.8s;
+    }
+
+    &__list.active {
+      transform: translate(0%);
+    }
+
+    &__list-link {
+      margin-bottom: 15px;
+    }
+
+    &__item {
+      padding: 22px;
+    }
+
+    &__item:active {
+      background-color: rgba(251, 201, 109, 0.6);
+    }
+
+    .burger {
+      display: block;
+    }
+  }
+
+  .how-does {
+    color: $dark-text;
+    padding-bottom: 30px;
+
+    &__inner {
+      max-width: 500px;
+      margin: 0 auto 0;
+    }
+
+    &__subtitle {
+      font-size: 32px;
+
+      margin: 16px 0 16px 50px;
+    }
+
+    &-list {
+      padding: 20px;
+    }
+    &-item + &-item {
+      margin-top: 20px;
+    }
+
+    &-item {
+      min-height: 33px;
+      max-width: 370px;
+      width: 100%;
+      padding: 13px;
+
+      &::before {
+        height: 80px;
+        width: 80px;
+        left: -40px;
+        top: 30px;
+      }
+    }
+  }
+
+  .questions {
+    margin: 120px 0 150px;
+    &__items {
+      max-width: 270px;
+    }
+
+    &__item {
+      margin-bottom: 18px;
+      max-width: 270px;
+    }
+
+    &__item-text {
+      font-size: 18px;
+      padding: 0 10px 0;
+      max-width: 270px;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &__item-title {
+      display: block;
+      line-height: 18px;
+      font-size: 18px;
+      color: #e8c200;
+    }
+  }
+
+  .parents {
+    padding: 30px 0;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    &__list-item {
+      font-size: 20px;
+      background-size: 15px 15px;
+      background-position: top center left;
+      padding-bottom: 10px;
+      margin-bottom: 0;
+    }
+
+    &__box {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    &__img {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  .puppy {
+    margin: 0;
+    padding: 30px 0;
+    &__card {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      padding: 10px;
+    }
+  }
+
+  .tabs {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .video-leasing {
+    &__content {
+      max-width: 730px;
+      height: auto;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .parents {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    &__list-item {
+      font-size: 20px;
+      background-size: 15px 15px;
+      background-position: top center left;
+      padding-bottom: 10px;
+      margin-bottom: 0;
+    }
+
+    &__box {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    &__img {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  .tabs {
+    &__content-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__img {
+      height: 60%;
+    }
+  }
+
+  .video-leasing {
+    &__content {
+      max-width: 930px;
+      height: auto;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width

@@ -1,74 +1,156 @@
 <section class="important">
   <div class="container">
     <h2 class="section-title">Important Things and Specification</h2>
-    
+
     <p class="important__text">
       Depending on your circumstances and what is important to you, a lease
       could be a great option for your next vehicle. Below are some important
       factors that may influence your decision.
     </p>
-    <ul class="important__list">
-      <li class="important__item">
-        <img class="important__item-img" src="images/health.webp" alt="" />
-        <h4 class="important__item-subtitle">Health</h4>
-        <p class="important__item-text">
-          Each state in the U.S. has different guidelines in regards to
-                  guaranteed health for sold puppies. For states that do not
-                  have a mandatory health guarantee in place, any breeder
-                  advertising through our site is expected to cover the health
-                  of their puppies for at least 30 days. In the event that a
-                  state guideline is in place offering a guarantee longer than
-                  30 days, that law holds precedence.
-        </p>
-      </li>
-      <li class="important__item">
-        <img class="important__item-img" src="images/physical-ex.webp" alt="" />
-        <h4 class="important__item-subtitle">Physical Exercise</h4>
-        <p class="important__item-text">
-          Your Golden Retriever will need a minimum of two hours of good
-          exercise per day. It's best to spread this out across the day
-          and include walks and lots of running, with extra playtime and
-          training on top. You can find out how much exercise your dog
-          needs, or even find exercises you can do together. Adult
-          Golden Retrievers require a reasonable amount of exercise to
-          keep them in top shape. Don't overexert puppies, otherwise
-          bone or joint problems may occur. A couple of hours of
-          exercise a day is enough for an adult dog, though he'll enjoy
-          more if you can provide it!
-        </p>
-      </li>
-      <li class="important__item">
-        <img class="important__item-img" src="images/nutrition.webp" alt="" />
-        <h4 class="important__item-subtitle">  Nutrition</h4>
-        <p class="important__item-text">
-          Golden Retrievers can consume a wide variety of healthy and
-                  nutritious foods. Proteins – beef, chicken, lamb, pork, and
-                  salmon; grains – wheat, oats, corn, and rice; dairy such as
-                  plain yogurt and cheese; vegetables; peas, pumpkin, carrots;
-                  fruits such as apples and berries are just a few examples.
-                  Large breeds of dogs with large appetites require a different
-                  mix of nutrients, including minerals and vitamins, compared to
-                  smaller dogs. Golden Retrievers are prone to flatulence and
-                  stomach problems. To reduce the risk of these problems, a more
-                  frequent and divided diet is recommended.
-        </p>
-      </li>
-      <li class="important__item">
-        <img class="important__item-img" src="images/hair-care.webp" alt="" />
-        <h4 class="important__item-subtitle">Hair Care</h4>
-        <p class="important__item-text">
-          Golden Retrievers shed all year long, but typically shed more
-                  in the spring and fall when their coats change. Ideally, your
-                  Golden Retriever should be brushed daily to improve shedding.
-                  Regular use of an undercoat rake can also be a big help for
-                  you (and your couch). The Golden Retriever's thick coat
-                  requires regular care. The undercoat has a water repellent
-                  function and is therefore very thick. But it must not be
-                  allowed to fall off: tangles cause discomfort to the animal.
-                  Although the long coat quickly collects water and dirt, when
-                  it dries, it is quite easy to clean.
-        </p>
-      </li>
-    </ul>
+
+    <div class="tabs">
+      <div class="tabs__list">
+        <button class="tabs__item " data-tab="tab-1">
+          Health
+        </button>
+        <button class="tabs__item " data-tab="tab-2">Physical Exercise</button>
+        <button class="tabs__item" data-tab="tab-3">Nutrition</button>
+        <button class="tabs__item " data-tab="tab-4">Hair Care</button>
+      </div>
+
+      <ul class="tabs__content">
+        <li class="tabs__content-item " id="tab-1">
+          <div class="tabs__content-box">
+            <img
+              class="tabs__content-img"
+              src="images/health.webp"
+              alt=""
+              width="700"
+              height="600"
+            />
+            <div class="tabs__content-text">
+              <p>
+                Each state in the U.S. has different guidelines in regards to
+                guaranteed health for sold puppies. For states that do not have
+                a mandatory health guarantee in place, any breeder advertising
+                through our site is expected to cover the health of their
+                puppies for at least 30 days. In the event that a state
+                guideline is in place offering a guarantee longer than 30 days,
+                that law holds precedence.
+              </p>
+              <p>
+                For dogs with atopy, a vet visit is needed quickly to manage the
+                itch and treat for any skin infection present. There are now
+                very effective and safe anti-itch medications available (Apoquel
+                and Cytopoint) that dogs with atopy can be on seasonally or
+                year-round to relieve itchiness and help to prevent secondary
+                skin infections.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs__content-item hidden" id="tab-2">
+          <div class="tabs__content-box tabs__content-box--column">
+            <img
+              class="tabs__content-img"
+              src="images/physical-ex.webp"
+              alt=""
+              height="700"
+            />
+            <div class="tabs__content-text">
+              <p>
+                Your Golden Retriever will need a minimum of two hours of good
+                exercise per day. It's best to spread this out across the day
+                and include walks and lots of running, with extra playtime and
+                training on top. You can find out how much exercise your dog
+                needs, or even find exercises you can do together. Adult Golden
+                Retrievers require a reasonable amount of exercise to keep them
+                in top shape. Don't overexert puppies, otherwise bone or joint
+                problems may occur. A couple of hours of exercise a day is
+                enough for an adult dog, though he'll enjoy more if you can
+                provide it!
+              </p>
+              <p>
+                Hot spots can appear anywhere on the body but most commonly are
+                found near the ears, the underside of the neck, or on the hips
+                of a Golden Retriever. Hot spots usually resolve quickly with a
+                combination of topical and oral medication prescribed by a
+                veterinarian. To help prevent hot spots, it’s important to keep
+                your Golden Retriever current on flea and tick prevention, make
+                sure they are thoroughly dried off after swimming or a bath, and
+                identify and treat underlying issues like allergies.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs__content-item hidden" id="tab-3">
+          <div class="tabs__content-box">
+            <img
+              class="tabs__content-img"
+              src="images/nutrition.webp"
+              alt=""
+              width="700"
+              height="600"
+            />
+            <div class="tabs__content-text">
+              <p>
+                Golden Retrievers can consume a wide variety of healthy and
+                nutritious foods. Proteins – beef, chicken, lamb, pork, and
+                salmon; grains – wheat, oats, corn, and rice; dairy such as
+                plain yogurt and cheese; vegetables; peas, pumpkin, carrots;
+                fruits such as apples and berries are just a few examples. Large
+                breeds of dogs with large appetites require a different mix of
+                nutrients, including minerals and vitamins, compared to smaller
+                dogs. Golden Retrievers are prone to flatulence and stomach
+                problems. To reduce the risk of these problems, a more frequent
+                and divided diet is recommended.
+              </p>
+              <p>
+                The exact nutritional requirements will depend on many factors,
+                such as the stage of life, breed, size, level of activity, and
+                overall dog health. For example, an energetic and growing puppy
+                may need twice the calories of an adult dog of the same breed.
+                Elderly dogs may need 20% fewer calories than middle-aged dogs.
+                For instance, my well-exercised dog needs an entirely different
+                diet and nutrition than a toy breed that likes to laze around
+                all day, and a pregnant pooch needs many more calories than that
+                same inactive lap dog.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs__content-item hidden" id="tab-4">
+          <div class="tabs__content-box tabs__content-box--column">
+            <img
+              class="tabs__content-img"
+              src="images/hair-care.webp"
+              alt=""
+              height="500"
+            />
+            <div class="tabs__content-text">
+              <p>
+                Golden Retrievers shed all year long, but typically shed more in
+                the spring and fall when their coats change. Ideally, your
+                Golden Retriever should be brushed daily to improve shedding.
+                Regular use of an undercoat rake can also be a big help for you
+                (and your couch). The Golden Retriever's thick coat requires
+                regular care. The undercoat has a water repellent function and
+                is therefore very thick. But it must not be allowed to fall off:
+                tangles cause discomfort to the animal. Although the long coat
+                quickly collects water and dirt, when it dries, it is quite easy
+                to clean.
+              </p>
+              <p>
+                Golden Retrievers have fur rather than hair. They have a double
+                coat that provides two levels of fur that are shed throughout
+                the year. All dogs that have the double coat like the Golden
+                Retriever will have hair rather than fur, which means you can
+                expect a moderate to high amount of shedding.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>

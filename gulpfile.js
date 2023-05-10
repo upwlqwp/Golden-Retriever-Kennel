@@ -27,17 +27,7 @@ function pages() {
     .pipe(browserSync.stream());
 }
 
-function fonts() {
-  return src("app/fonts/src/*.*")
-    .pipe(
-      fonter({
-        formats: ["woff", "ttf"],
-      })
-    )
-    .pipe(src("app/fonts/*.ttf"))
-    .pipe(ttf2woff2())
-    .pipe(dest("app/fonts/dist"));
-}
+
 
 function images() {
   return src(["app/images/src/*.*", "!app/images/src/*svg"])
@@ -137,7 +127,6 @@ function building() {
 }
 
 exports.styles = styles;
-exports.fonts = fonts;
 exports.pages = pages;
 exports.scripts = scripts;
 exports.watching = watching;
