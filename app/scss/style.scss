@@ -337,7 +337,7 @@
   &__mom,
   &__dad {
     display: block;
-    color: #e6470d;
+    color: $accent;
     margin-bottom: 27px;
     font-size: 39px;
     font-weight: 600;
@@ -350,7 +350,7 @@
   &__list-item {
     text-transform: capitalize;
     font-size: 28px;
-    color: #252525;
+    color: $dark-text;
     background-image: url("../images/star.svg");
     background-repeat: no-repeat;
     padding-left: 40px;
