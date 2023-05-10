@@ -1,16 +1,11 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-
-
-.section {
-  &-title {
-    font-weight: 700;
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 50px;
-    color: $primary-color;
+  .section {
+    &-title {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
   }
-}
 
   .parents {
     &__list {
@@ -57,20 +52,10 @@
       grid-template-columns: repeat(2, 1fr);
       margin-bottom: 25px;
       padding: 30px;
-      border-radius: 4px;
-      background-color: #f9f7ee;
-      box-shadow: none;
     }
 
     &__item {
       margin-bottom: 15px;
-    }
-  }
-
-  .video-leasing {
-    &__content {
-      max-width: 530px;
-      height: auto;
     }
   }
 
@@ -86,11 +71,6 @@
   .benefits {
     padding: 50px 0;
 
-    &__list {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
     &__item-img {
       margin: 0 auto 30px;
       padding: 30px;
@@ -102,7 +82,6 @@
   }
 }
 
-// Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
   .menu {
     &__list {
@@ -259,16 +238,8 @@
       margin-bottom: 20px;
     }
   }
-
-  .video-leasing {
-    &__content {
-      max-width: 730px;
-      height: auto;
-    }
-  }
 }
 
-// Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   .parents {
     &__list {
@@ -320,15 +291,12 @@
       height: auto;
     }
   }
-}
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
+  .benefits {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
 }
-
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {
-}
-
-// XX-Large devices (larger desktops)
-// No media query since the xxl breakpoint has no upper bound on its width

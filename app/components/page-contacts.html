@@ -1,21 +1,45 @@
 <section class="contacts">
- <div class="container">
-    <h2 class="section-title contacts__title">
-        Contact us
-    </h2>
+  <div class="container">
+    <h2 class="section-title contacts__title">Contact us</h2>
 
     <p class="contacts__text">
-        Feel free to contact us with 
-        questions, potencial partnerships or media inquiries
+      Feel free to contact us with questions, potencial partnerships or media
+      inquiries
     </p>
-    <form action="" class="form">
-        <div class="form__wrapper">
-            <input class="form__input" type="text" name="" id="" placeholder="name">
-            <input class="form__input"  type="email" name="" id="" placeholder="email">
-        </div>
-        <textarea class="form__textarea" placeholder="text"></textarea>
-        <button class="form__btn button" type="submit">Submit</button>
+    <form class="form" action="/apply/" method="post">
+      <div class="form__wrapper">
+        <label for="name"
+          ><input
+            class="form__input"
+            type="text"
+            name="your name"
+            id="name"
+            placeholder="name"
+            required
+            autofocus
+        /></label>
+        <label for="email"
+          ><input
+            class="form__input"
+            type="email"
+            name="your email"
+            id="email"
+            placeholder="email"
+            required
+            autofocus
+        /></label>
+      </div>
+      <label for="message">
+        <textarea
+          class="form__textarea"
+          id="message"
+          placeholder="your message"
+          name="message"
+          cols="33"
+          rows="5"
+        ></textarea>
+      </label>
+      <button class="form__btn button" type="submit">Submit</button>
     </form>
- </div>
+  </div>
 </section>
-

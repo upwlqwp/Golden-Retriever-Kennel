@@ -127,20 +127,25 @@
   padding: 150px 0;
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
+
     gap: 40px;
   }
 
   &__item {
     text-align: center;
+    padding: 120px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: top 20px center;
+    border: 1px solid $accent;
+    border-radius: 16px;
   }
 
   &__item-img {
     margin: 0 auto 30px;
-    border-radius: 50px;
-    border: 1px solid $accent;
-    padding: 50px;
+    padding: 40px;
   }
 
   &__item-text {
