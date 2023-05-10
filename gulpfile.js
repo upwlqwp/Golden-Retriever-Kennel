@@ -30,7 +30,7 @@ function pages() {
 
 
 function images() {
-  return src(["app/images/src/*.*", "!app/images/src/*svg"])
+  return src(["app/images/src/*.*"])
     .pipe(src("app/images/src/*.*"))
     .pipe(newer("app/images"))
     .pipe(webp())
