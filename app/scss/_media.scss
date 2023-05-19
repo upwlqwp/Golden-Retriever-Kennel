@@ -65,6 +65,46 @@
     }
   }
 
+  .questions {
+    &__items {
+      max-width: 220px;
+  
+    }
+  
+    &__item {
+      margin-bottom: 18px;
+      max-width: 220px;
+  
+    }
+
+
+    &__item-title {
+      line-height: 18px;
+      font-size: 18px;
+      padding: 10px;
+      max-height: 30px;
+      margin-bottom: 15px;
+
+  
+      &::after {
+        display: none;
+      }
+    }
+  
+  
+    &__item-text {
+      font-size: 18px;
+      padding: 0 10px 0;
+      max-width: 220px;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+    }
+  
+  
+ 
+  }
+
   .footer {
     &__menu {
       display: grid;
@@ -78,7 +118,6 @@
     padding: 30px 0;
 
     &__list {
-      display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
 
@@ -168,34 +207,6 @@
     }
   }
 
-  .questions {
-    margin:  66px 0;
-    &__items {
-      max-width: 270px;
-    }
-
-    &__item {
-      margin-bottom: 18px;
-      max-width: 270px;
-    }
-
-    &__item-text {
-      font-size: 18px;
-      padding: 0 10px 0;
-      max-width: 270px;
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.5s ease-in-out;
-    }
-
-    &__item-title {
-      display: block;
-      line-height: 18px;
-      font-size: 18px;
-      color: #e8c200;
-    }
-  }
-
   .parents {
     padding: 30px 0;
     &__list {
@@ -249,6 +260,33 @@
       margin-bottom: 20px;
     }
   }
+
+  .questions {
+    &__items {
+      max-width: 420px;
+  
+    }
+  
+    &__item {
+      margin-bottom: 18px;
+      max-width: 420px;
+  
+    }
+  
+  
+    &__item-text {
+      font-size: 18px;
+      padding: 0 10px 0;
+      max-width: 420px;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+    }
+  
+  
+ 
+  }
+    
 }
 
 @media (max-width: 991.98px) {
@@ -314,5 +352,14 @@
     &__item {
       max-width: 420px;
     }
+  }
+}
+
+@media (max-width: 561.98px) {
+  .benefits__list {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
